@@ -1,0 +1,94 @@
+<style>
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fefefe;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  background: #fff;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+  content: "-";
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  background: #fafafa;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+</style>
+
+<div class="faq-container">
+  <div class="faq-item">
+    <div class="faq-question">How long does it take to see SEO results?</div>
+    <div class="faq-answer">It generally takes from 3–6 months to see significant results, as SEO is a long-term investment.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Do I need technical skills to learn SEO?</div>
+    <div class="faq-answer">No, but having technical knowledge can be helpful in understanding complex issues and problem-solving.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Can I do SEO on my own or should I hire an agency?</div>
+    <div class="faq-answer">If you have time and patience, you can learn SEO on your own. However, for quicker and more professional results, hiring an SEO agency in Nepal is recommended.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Can I rank my Nepali business internationally using SEO?</div>
+    <div class="faq-answer">Yes, with the right strategy, content, and international SEO techniques, your Nepali business can rank globally.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Is .com.np domain good for SEO?</div>
+    <div class="faq-answer">Yes, it works great for Nepal-based SEO. But for international targeting, a .com or other TLD may offer better flexibility.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Should I use Nepali or English for my content?</div>
+    <div class="faq-answer">Use Nepali if targeting local users. English is ideal for broader/global reach. Using both can work depending on your strategy.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Is SEO still worth it in 2025?</div>
+    <div class="faq-answer">Absolutely. With more businesses going online, search visibility is essential. SEO provides lasting organic growth compared to paid ads.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">How do I know if my SEO is working or not?</div>
+    <div class="faq-answer">Use tools like Google Search Console, Google Analytics, Ubersuggest, Ahrefs, or SEMrush to track traffic, rankings, and keyword performance.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Can social media activity affect my SEO?</div>
+    <div class="faq-answer">Indirectly, yes. Social media can increase visibility, drive traffic, and generate backlinks, which all help improve SEO over time.</div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    item.classList.toggle('active');
+  });
+});
+</script>
